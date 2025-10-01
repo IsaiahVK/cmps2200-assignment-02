@@ -5,6 +5,13 @@ See assignment-02.md for details.
 from collections import defaultdict
 import math
 
+
+def iterate(f, x, a):
+  if len(a) == 0:
+    return x
+  else:
+    return iterate(f, f(x, a[0]), a[1:])
+
 #### Iterative solution
 def parens_match_iterative(mylist):
     """
@@ -22,9 +29,7 @@ def parens_match_iterative(mylist):
     >>>parens_match_iterative(['('])
     False
     """
-    ### TODO
     return iterate(parens_update, 0, mylist) == 0
-    ###
 
 
 def parens_update(current_output, next_input):
@@ -76,10 +81,20 @@ def parens_match_scan(mylist):
     False
     
     """
-    ###TODO
+    def plus(x, y):
+        return x + y
+
     history, last = scan(plus, 0, list(map(paren_map, mylist)))
+
+
     return last == 0 and reduce(min_f, 0, history) >= 0
     ###
+
+def reduce(f, id_, a):
+    current_val = id_
+    for x in a:
+        current_val = f(current_val, x)
+    return current_val
 
 def scan(f, id_, a):
     """
