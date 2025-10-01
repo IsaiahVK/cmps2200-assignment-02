@@ -150,11 +150,17 @@ Suppose that for a given task you are choosing between the following three algor
 
 
 * Algorithm $\mathcal{A}$: $W(n)=5W(n/2)+n$
+    - $n^{log_25} > n$
+    - $W(n)=O(n^{log_25})$
 
 * Algorithm $\mathcal{B}$: $W(n)=2W(n-1)+1$
+    - $W(n)=O(2^n)$
 
 * Algorithm $\mathcal{C}$: $W(n)=9W(n/3)+n^2$
+    - $n^{log_39} = n^2$
+    - $W(n)=O(n^2logn)$
 
+# Algorithm C is the most efficient
 
 
 ## Part 3: Parenthesis Matching
