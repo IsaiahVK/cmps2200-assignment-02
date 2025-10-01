@@ -163,10 +163,10 @@ def parens_match_dc_helper(mylist):
       L is the number of unmatched left parentheses. This output is used by 
       parens_match_dc to return the final True or False value
     """
-    ###TODO
+
     # Base cases
     if len(mylist) == 0:
-        return [0,0]
+        return (0,0)
     elif len(mylist) == 1:
         if mylist[0] == '(':
             return (0, 1) # one unmatched (

@@ -235,7 +235,8 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 
 **3f.** Assuming any recursive calls are done in parallel, what are the recurrences for the Work and Span of this solution? What are their Big Oh solutions?
 
-**enter answer here**
+    - $W(n) = O(n)$
+    - $S(n) = O(logn)$
 
 .  
 . 
