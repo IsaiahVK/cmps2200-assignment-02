@@ -149,12 +149,11 @@ Suppose that for a given task you are choosing between the following three algor
     Which algorithm would you choose?
 
 
-.  
-.  
-.  
-.  
-. 
-. 
+* Algorithm $\mathcal{A}$: $W(n)=5W(n/2)+n$
+
+* Algorithm $\mathcal{B}$: $W(n)=2W(n-1)+1$
+
+* Algorithm $\mathcal{C}$: $W(n)=9W(n/3)+n^2$
 
 
 
