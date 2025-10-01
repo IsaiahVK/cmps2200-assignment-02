@@ -160,7 +160,7 @@ Suppose that for a given task you are choosing between the following three algor
     - $n^{log_39} = n^2$
     - $W(n)=O(n^2logn)$
 
-# Algorithm C is the most efficient
+### Algorithm C is the most efficient
 
 
 ## Part 3: Parenthesis Matching
