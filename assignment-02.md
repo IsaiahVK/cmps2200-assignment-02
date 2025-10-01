@@ -17,17 +17,22 @@ Derive asymptotic upper bounds of work for each recurrence below.
 * $W(n)=2W(n/3)+1$
 .  
 .  $a=2, b=3, f(n)=1$
+
 . 
 .  $n < n^{log_32}$
+
 . 
 .  $W(n)=O(n^{log_32})$
 . 
  
 * $W(n)=5W(n/4)+n$
 .  
+
 . $a=5, b=4, f(n)=n$
+
 .  
 .  $n < n^{log_45}$
+
 
 .  $W(n)=O(n^{log_45})$
 . 
@@ -36,10 +41,13 @@ Derive asymptotic upper bounds of work for each recurrence below.
 . 
 
 * $W(n)=7W(n/7)+n$
+
 .  
 . $a=7, b=7, f(n)=n$
+
 .  
 .  $n=n^{log_77}$
+
 . 
 .  $W(n)=O(nlogn)$
 .
@@ -47,8 +55,10 @@ Derive asymptotic upper bounds of work for each recurrence below.
 * $W(n)=9W(n/3)+n^2$
 .  
 . $a=9, b=3, f(n)=n^2$
+
 . 
 .  $n^2=n^{log_39}$
+
 . 
 .  
 .  
@@ -58,8 +68,10 @@ Derive asymptotic upper bounds of work for each recurrence below.
 * $W(n)=8W(n/2)+n^3$
 .  
 . $a=8, b=2, f(n)=n^3$
+
 .  
 .  $n^3=n^{log_28}$
+
 .  
 .  
 . 
@@ -70,8 +82,10 @@ Derive asymptotic upper bounds of work for each recurrence below.
 * $W(n)=49W(n/25)+n^{3/2}\log n$
 .  
 .  $a=49, b=25, f(n)=n^{3/2}logn$
+
 . 
 .  $n^{3/2}logn>n^{log_57}$
+
 . 
 .  
 .  $W(n)=O(n^{3/2}logn)$
@@ -80,6 +94,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 * $W(n)=W(n-1)+2$
 .  
 .  $W(0) + 2n = 2n + c$
+
 . 
 .  
 . 
@@ -89,7 +104,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 
 * $W(n)= W(n-1)+n^c$, with $c\geq 1$
 .  
-.  `sum_{i=1 to n} i^c`
+.  $\sum_{i=1}^{n} i^c$
 .  
 .  
 .  
@@ -99,13 +114,13 @@ Derive asymptotic upper bounds of work for each recurrence below.
 
 * $W(n)=W(\sqrt{n})+1$
 .  
-.  Let `m = log_2(n)`, which means `n = 2^m`.
+.  Let $m = log_2n$, $n = 2^m$.
 
-.  Let `S(m) = W(n) = W(2^m)`.
+.  Let $S(m) = W(n) = W(2^m)$.
 
-.  The recurrence `W(n) = W(sqrt(n)) + 1` becomes `W(2^m) = W((2^m)^(1/2)) + 1 = W(2^(m/2)) + 1`.
+.  The recurrence $W(n) = W(sqrt(n)) + 1$ becomes $W(2^m) = W((2^m)^(1/2)) + 1 = W(2^(m/2)) + 1$.
 
-.  In terms of S, this is `S(m) = S(m/2) + 1`.
+.  $S(m) = S(m/2) + 1$
 .  
 .  
 .  $W(n)=O(loglogn)$
